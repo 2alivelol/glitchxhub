@@ -7,6 +7,8 @@ if not syn or not protectgui then
     getgenv().protectgui = function() end
 end
 
+if KRNL_LOADED or is_closure then
+
 local SilentAimSettings = {
     Enabled = false,
     
